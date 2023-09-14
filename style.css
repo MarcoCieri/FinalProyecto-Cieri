@@ -1,11 +1,53 @@
-/*body {
-    background-image: url(./img/fondo2.png);
-    opacity: 0.02;
-    
-}*/
 body {
     background-color: rgb(57, 57, 72);
 }
+
+body a {
+    text-decoration: none;
+}
+
+body .div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body section div img {
+    width: 200px;
+}
+
+.btn {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.btn::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 9em;
+}
+
 
 .titulo {
     display: flex;
@@ -16,30 +58,6 @@ body {
 
 section {
     margin-top: 50px;
-}
-
-#inicio {
-    display: grid;
-    background-image: url(./img/fondo.png);
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-#inicio h2 {
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 23px;
-    text-align: center;
-}
-
-#inicio a {
-    text-decoration: none;
-}
-
-#inicio a:hover {
-    padding: 2px;
-    margin: 0 2px;
 }
 
 header div {
@@ -59,6 +77,16 @@ header div img {
     row-gap: 1.2rem;
     padding: 0 1rem 2.5em 1rem;
     background-color: rgb(57, 57, 72);
+}
+
+#grid div h3 {
+    font-size: 30px;
+    color: #0fd850;
+}
+
+#grid div p {
+    font-size: 17px;
+    color: rgb(158, 156, 152);
 }
 
 section a {
